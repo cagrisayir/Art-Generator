@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct Art_GeneratorApp: App {
+struct AppEntry: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+                }
         }
     }
 }
