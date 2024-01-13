@@ -12,6 +12,8 @@
 		068B82732B52C04C000530EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068B82722B52C04C000530EE /* Assets.xcassets */; };
 		068B82762B52C04C000530EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068B82752B52C04C000530EE /* Preview Assets.xcassets */; };
 		068B827D2B52C090000530EE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068B827C2B52C090000530EE /* Launch Screen.storyboard */; };
+		068B82822B52C501000530EE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B82812B52C500000530EE /* Models.swift */; };
+		068B82842B52C599000530EE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B82832B52C599000530EE /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		068B827C2B52C090000530EE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		068B827E2B52C1F8000530EE /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		068B827F2B52C26B000530EE /* Art-Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Art-Generator-Info.plist"; sourceTree = SOURCE_ROOT; };
+		068B82812B52C500000530EE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		068B82832B52C599000530EE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		068B826D2B52C04A000530EE /* Art Generator */ = {
 			isa = PBXGroup;
 			children = (
+				068B82802B52C4EF000530EE /* Model */,
 				068B827F2B52C26B000530EE /* Art-Generator-Info.plist */,
 				068B826E2B52C04A000530EE /* AppEntry.swift */,
 				068B82702B52C04A000530EE /* ContentView.swift */,
@@ -62,6 +67,7 @@
 				068B827E2B52C1F8000530EE /* Config.xcconfig */,
 				068B82742B52C04C000530EE /* Preview Content */,
 				068B827C2B52C090000530EE /* Launch Screen.storyboard */,
+				068B82832B52C599000530EE /* APIService.swift */,
 			);
 			path = "Art Generator";
 			sourceTree = "<group>";
@@ -72,6 +78,14 @@
 				068B82752B52C04C000530EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		068B82802B52C4EF000530EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				068B82812B52C500000530EE /* Models.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068B82822B52C501000530EE /* Models.swift in Sources */,
 				068B82712B52C04A000530EE /* ContentView.swift in Sources */,
+				068B82842B52C599000530EE /* APIService.swift in Sources */,
 				068B826F2B52C04A000530EE /* AppEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
