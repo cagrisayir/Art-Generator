@@ -5,7 +5,7 @@
 //  Created by Omer Cagri Sayir on 13.01.2024.
 //
 
-import Foundation
+import UIKit
 
 class APIService {
     let baseURL = "https://api.openai.com/v1/images/"
@@ -32,6 +32,20 @@ class APIService {
             return try JSONDecoder().decode(ResponseModel.self, from: data)
         } catch {
             throw error
+        }
+    }
+
+    func loadImage(at url: URL) async -> UIImage? {
+        let request = URLRequest(url: url)
+        do {
+            let (data, response) = try await URLSession.shared.data(for: request)
+            guard (response as? HTTPURLResponse) != nil else {
+                fatalError("Error: Data Request Error")
+            }
+            return UIImage(data: data)
+        } catch {
+            print(error.localizedDescription)
+            return nil
         }
     }
 }
