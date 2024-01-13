@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		068B826F2B52C04A000530EE /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B826E2B52C04A000530EE /* AppEntry.swift */; };
-		068B82712B52C04A000530EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B82702B52C04A000530EE /* ContentView.swift */; };
+		068B82712B52C04A000530EE /* DALLEImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B82702B52C04A000530EE /* DALLEImagesView.swift */; };
 		068B82732B52C04C000530EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068B82722B52C04C000530EE /* Assets.xcassets */; };
 		068B82762B52C04C000530EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068B82752B52C04C000530EE /* Preview Assets.xcassets */; };
 		068B827D2B52C090000530EE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068B827C2B52C090000530EE /* Launch Screen.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		068B826B2B52C04A000530EE /* Art Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		068B826E2B52C04A000530EE /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
-		068B82702B52C04A000530EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		068B82702B52C04A000530EE /* DALLEImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEImagesView.swift; sourceTree = "<group>"; };
 		068B82722B52C04C000530EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068B82752B52C04C000530EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		068B827C2B52C090000530EE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -59,15 +59,15 @@
 		068B826D2B52C04A000530EE /* Art Generator */ = {
 			isa = PBXGroup;
 			children = (
-				068B82802B52C4EF000530EE /* Model */,
+				068B82852B52CA74000530EE /* Screens */,
+				068B82802B52C4EF000530EE /* Models */,
 				068B827F2B52C26B000530EE /* Art-Generator-Info.plist */,
 				068B826E2B52C04A000530EE /* AppEntry.swift */,
-				068B82702B52C04A000530EE /* ContentView.swift */,
-				068B82722B52C04C000530EE /* Assets.xcassets */,
-				068B827E2B52C1F8000530EE /* Config.xcconfig */,
-				068B82742B52C04C000530EE /* Preview Content */,
-				068B827C2B52C090000530EE /* Launch Screen.storyboard */,
 				068B82832B52C599000530EE /* APIService.swift */,
+				068B827E2B52C1F8000530EE /* Config.xcconfig */,
+				068B827C2B52C090000530EE /* Launch Screen.storyboard */,
+				068B82722B52C04C000530EE /* Assets.xcassets */,
+				068B82742B52C04C000530EE /* Preview Content */,
 			);
 			path = "Art Generator";
 			sourceTree = "<group>";
@@ -80,12 +80,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		068B82802B52C4EF000530EE /* Model */ = {
+		068B82802B52C4EF000530EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				068B82812B52C500000530EE /* Models.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		068B82852B52CA74000530EE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				068B82862B52CA91000530EE /* DALLE Images */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		068B82862B52CA91000530EE /* DALLE Images */ = {
+			isa = PBXGroup;
+			children = (
+				068B82702B52C04A000530EE /* DALLEImagesView.swift */,
+			);
+			path = "DALLE Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				068B82822B52C501000530EE /* Models.swift in Sources */,
-				068B82712B52C04A000530EE /* ContentView.swift in Sources */,
+				068B82712B52C04A000530EE /* DALLEImagesView.swift in Sources */,
 				068B82842B52C599000530EE /* APIService.swift in Sources */,
 				068B826F2B52C04A000530EE /* AppEntry.swift in Sources */,
 			);
