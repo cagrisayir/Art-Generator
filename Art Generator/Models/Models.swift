@@ -5,7 +5,7 @@
 //  Created by Omer Cagri Sayir on 13.01.2024.
 //
 
-import Foundation
+import SwiftUI
 
 enum Constants {
     static let imageSize = "256x256"
@@ -20,4 +20,18 @@ struct GenerationInput: Codable {
     var encodedData: Data? {
         try? JSONEncoder().encode(self)
     }
+}
+
+struct DalleImage: Identifiable {
+    var id = UUID()
+    var uiImage: UIImage?
+}
+
+struct ResponseModel: Codable {
+    struct Data: Codable {
+        let url: URL
+    }
+
+    let created: Date
+    let data: [Data]
 }
