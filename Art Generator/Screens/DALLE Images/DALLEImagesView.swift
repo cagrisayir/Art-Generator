@@ -85,8 +85,15 @@ struct DALLEImagesView: View {
                     } else {
                         Text(vm.description)
                             .padding()
-                        Button("Try another") {
-                            vm.reset()
+                        HStack {
+                            if vm.selectedImage != nil {
+                                Button("Get variations") {
+                                    vm.fetchVariations()
+                                }
+                            }
+                            Button("Try another") {
+                                vm.reset()
+                            }
                         }.buttonStyle(.borderedProminent)
                     }
                 } else {
