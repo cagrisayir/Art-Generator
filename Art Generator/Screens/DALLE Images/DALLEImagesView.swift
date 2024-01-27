@@ -46,22 +46,61 @@ struct DALLEImagesView: View {
                             .textFieldStyle(.roundedBorder)
                             .padding()
 
-                        Button("Fetch") {
-                            vm.fetchImages()
+                        Form {
+                            Picker("Style", selection: $vm.imageStyle) {
+                                ForEach(ImageStyle.allCases, id: \.self) { imageStyle in
+                                    Text(imageStyle.rawValue.capitalized)
+                                }
+                            }
+
+                            Picker("Image Medium", selection: $vm.imageMedium) {
+                                ForEach(ImageMedium.allCases, id: \.self) { imageMedium in
+                                    Text(imageMedium.rawValue.capitalized)
+                                }
+                            }
+
+                            Picker("Artist", selection: $vm.artist) {
+                                ForEach(Artist.allCases, id: \.self) { artist in
+                                    Text(artist.rawValue.capitalized)
+                                }
+                            }
+                            HStack {
+                                Spacer()
+                                Button("Fetch") {
+                                    vm.fetchImages()
+                                }
+                                .disabled(vm.prompt.isEmpty)
+                                .buttonStyle(.borderedProminent)
+                            }
+                            HStack {
+                                Spacer()
+                                if vm.urls.isEmpty || vm.selectedImage == nil {
+                                    Image("artist")
+                                        .resizable()
+                                        .frame(width: 150, height: 150)
+                                }
+                                Spacer()
+                            }
                         }
-                        .disabled(vm.prompt.isEmpty)
-                        .buttonStyle(.borderedProminent)
                     } else {
+                        Text(vm.description)
+                            .padding()
                         Button("Try another") {
-                            vm.clearProperties()
+                            vm.reset()
                         }.buttonStyle(.borderedProminent)
                     }
                 } else {
                     ProgressView()
                 }
+                if vm.selectedImage == nil && !vm.urls.isEmpty {
+                    Image("artist")
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                }
                 Spacer()
             }
             .navigationTitle("Art Generator")
+            .ignoresSafeArea(edges: .bottom)
         }
     }
 }
