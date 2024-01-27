@@ -1,4 +1,6 @@
 # Art Generator with OpenAI API
+Development of this application has finished. I learned how to POST requests and get response from an API, how to share images or something else in the app, how to make an animated loading screen, and more.
+
 
 ## ✅ Milestone #0 Set App Icons and Splash Screen  ✅
 <img src="https://github.com/cagrisayir/Art-Generator/assets/44059539/3c5a0b0e-8d15-4e9b-a25f-aea46979e14e" width="200" height="300" />
@@ -18,8 +20,9 @@
   * Used Picker and Form to show them to the user.
 
 ## ☑️ Milestone #5 Requesting Image Variations ☑️
-## Milestone $6 Sharing Images 
-## Milestone #7 Better Loading animation and UX
+## ✅ Milestone $6 Sharing Images ✅
+## ✅ Milestone #7 Better Loading Animation and UX ✅
+<img src="https://github.com/cagrisayir/Art-Generator/assets/44059539/dfe0167c-4bfd-4330-9f87-2361b2e49adc" width="250" height="300" />
 
 
 # In App Images 
