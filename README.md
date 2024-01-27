@@ -17,6 +17,11 @@
   * Made enums for Artists, Mediums, and styles.
   * Used Picker and Form to show them to the user.
 
+## Milestone #5 Requesting Image Variations
+## Milestone $6 Sharing Images 
+## Milestone #7 Better Loading animation and UX
+
+
 # In App Images 
 <img src="https://github.com/cagrisayir/Art-Generator/assets/44059539/ac85f62a-2bdd-4572-b7cf-46d682dc4d43" width="200" height="300" />   <img src="https://github.com/cagrisayir/Art-Generator/assets/44059539/5710f500-fe47-402c-aa3f-b9edc66211e6" width="200" height="300" />
 
