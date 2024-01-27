@@ -97,7 +97,9 @@ struct DALLEImagesView: View {
                         }.buttonStyle(.borderedProminent)
                     }
                 } else {
-                    ProgressView()
+                    Spacer()
+                    FetchingView()
+                    Spacer()
                 }
                 if vm.selectedImage == nil && !vm.urls.isEmpty {
                     Image("artist")
