@@ -17,7 +17,7 @@
   * Made enums for Artists, Mediums, and styles.
   * Used Picker and Form to show them to the user.
 
-## Milestone #5 Requesting Image Variations
+## ☑️ Milestone #5 Requesting Image Variations ☑️
 ## Milestone $6 Sharing Images 
 ## Milestone #7 Better Loading animation and UX
 
